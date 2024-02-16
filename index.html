@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3156a398eb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/Niranjan_text.jpg"  class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="projects_and_certificates.html">Projects & Certificates</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick = "openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Niranjan</span> from India</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------about-------------------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/Niranjan1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To work in a dexterous and globally competitive environment with committed and dedicated people, which will help me to explore myself fully and realize my potential. Willing to work as a key player in challenging and creative environment.</p>
+                    
+                    <div id = "hovercolor"><div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links  " onclick="opentab('education')">Education</p>
+                        
+                    </div></div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Machine Learning</span><br>Building ML models</li>
+                            <li><span>Languages</span><br>Python, C, Java</li>
+                           </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jun 2023 - Jul 2023</span><br>APSCHE(Online) Student Intern(ML)</li>
+                            <li><span>May 2023 - Jun 2023</span><br>Bharat Intern(Online) Student Intern(ML)</li>
+                            <li><span>Jul 2022 - Sep 2022</span><br>Coincent ai(Online) Student Intern(Wed Development)</li>
+                            <li><span>May 2022 - Jun 2022</span><br>Smartknower(Online) Student Intern(AI)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>B.Tech - Sri Venkateswara Engineering College(83%)</li>
+                            <li><span>2018 - 2020</span><br>Intermediate/12th - Narayana Junior College(82.5%)</li>
+                            <li><span>2017 - 2018</span><br>10th Class - Narayana E-Techno School(10GPA)</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!---------------------Services----------------->
+
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I'm a web developer who loves turning ideas into user-friendly websites. With a focus on clean design and smooth functionality, I bring a practical approach to every project.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Machine Learning</h2>
+                <p>I'm a machine learning enthusiast dedicated to transforming data into actionable insights. From predictive models to data visualization, I bring a practical and results-driven approach to the world of machine learning.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!---------------------Contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>niranjanavulapati4@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>9346438654</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/niranjanavulapati/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/niranjanavulapati/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/niranjanavulapati/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/niranjanavulapati/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="doc/resume.pdf" class="btn btn2" >Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class = 'btn btn2'>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Niranjan Avulapati</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwM3r07l08Dl3TBUP09JYS1lMRyxGPPuOjRisr_twv8IkP2alNusz5He8fr8klRDi2v/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+</html>
